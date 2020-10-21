@@ -47,6 +47,24 @@ bottoneGenera.addEventListener("click", function(){
    document.getElementById('offerta-applicata').innerHTML = offerta;
    document.getElementById('carrozza').innerHTML = numCarrozza;
    document.getElementById('codice-cp').innerHTML = codiceCp;
-    document.getElementById('costo').innerHTML = costoBiglietto;
+   document.getElementById('costo').innerHTML = costoBiglietto;
+
+   container.className = "show";
+
+});
+
+bottoneAnnulla.addEventListener("click", function(){
+   container.className = "hidden";
+
+   document.getElementById('nome').value = "";
+   document.getElementById('km').value = "";
+   document.getElementById('fascia-eta').value = "";
+
+   document.getElementById('nome-passeggero').innerHTML = "";
+   document.getElementById('offerta-applicata').innerHTML = "";
+   document.getElementById('carrozza').innerHTML = "";
+   document.getElementById('codice-cp').innerHTML = "";
+   document.getElementById('costo').innerHTML = "";
+
 
 });
